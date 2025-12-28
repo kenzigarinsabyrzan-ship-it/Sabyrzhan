@@ -1,29 +1,27 @@
-public class Student extends Human {
-    private String grade;
-    private float weight;
+public final class Student extends Human implements Istudy {
 
-    public Student(String name, int age, boolean isWorking, String grade, float weight) {
-        super(name, age, isWorking);
-        this.grade = grade;
-        this.weight = weight;
-    }
-    public Student() {}
-    public String getGrade(){
-        return this.grade;
-    }
-    public float getWeight(){
-        return this.weight;
+    public final String school;
+
+    public Student(String name, int age, String school) {
+        super(name, age);
+        this.school = school;
     }
 
-    public void setGrade(String grade){
-        this.grade = grade;
-    }
-    public void setWeight(float weight){
-        this.weight = weight;
     }
 
-    @Override
-    public void speak(){
-        System.out.println("Student is speaking");
+    public void study(){
+        System.out.println(name + " is studying right now");
+    }
+
+    public void cheat(){
+        System.out.println(name + " is cheating on exam");
+    }
+
+    public void greet(){
+        System.out.println("Greetings! My name is " + name);
+    }
+
+    public final void showSchool(){
+        System.out.println("Student is showing his " + school);
     }
 }
