@@ -28,6 +28,11 @@ public class Employee extends Human implements Istudy, Iwork {
     }
 
     @Override
+    public void showschool() {
+        System.out.println(name + " Is showing his old school");
+    }
+
+    @Override
     public void greet(){
         System.out.println("Hello. My name is " + name);
     }

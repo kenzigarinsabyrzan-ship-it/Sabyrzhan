@@ -12,5 +12,6 @@ public class Main{
     Istudy student_employee = new Employee ("Julia", 18, 6);
     student_employee.study();
     student_employee.cheat();
+    student_employee.showschool();
   }
 }
